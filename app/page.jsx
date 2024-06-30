@@ -10,7 +10,7 @@ const Home = () => {
         <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
           <div className='text-center xl:text-left'>
             <h1 className='h1 mb-6 '>
-              Hello I'm <br/> <span className='text-accent'>Jung Hwang</span>
+              Hello I&apos;m <br/> <span className='text-accent'>Jung Hwang</span>
             </h1>
             <p className='max-w-[500px] mb-9 text-gray-700'>
             I am an upcoming senior pursuing a Bachelor of Science in Data Science and Applied Statistics at Purdue University, with an anticipated graudation in May 2025.
