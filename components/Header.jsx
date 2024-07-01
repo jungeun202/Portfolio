@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container ml-2 flex justify-between items-center">
             {/* logo */}
             <Link href={"/"}>
-{/*                 <Image src="./logo.png" className="flex object-cover w-20 " alt="Jung's Profile" /> */}
+                <Image src="/logo.png" width={80} height={80} className="flex object-cover" alt="Jung's Profile" />
             </Link>
             {/* desktop nav */}
             <div className="hidden xl:flex items-center gap-8">
