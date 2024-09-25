@@ -33,7 +33,7 @@ const experiences = [
     stack: [
       {name: "Deep Learning"}, {name: "PyTorch"}
     ],
-    image: "/assets/hanyangUniv.png",
+    image: "",
     live:"https://github.com/jungeun202/Transformer",
   }
 ]
