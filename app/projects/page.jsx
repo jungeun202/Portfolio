@@ -33,7 +33,7 @@ const Projects = () => {
             opacity:1,
             transition:{delay:0.6, duration:0.4, ease: "easeIn"},
         }}
-        className="grid grid-cols-1    "
+        className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {projects.map((project, index) => {
             return (
