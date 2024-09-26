@@ -7,14 +7,25 @@ const projects = [
   {
     num: '01',
     title: 'PKA Web Development',
-    description: "Develop a scalable full-stack web application designed for students to access career opportunities and information regarding Purdue, and to interact within a social networking platform.",
+    description: (
+      <>
+      Develop a scalable full-stack web application designed for students to access career opportunities and information regarding Purdue, and to interact within a social networking platform.
+      <br/>
+      I was specifically responsible for implementing a unique view count for each post by integrating the MySQL database with the corresponding APIs.      </>
+    ),
     href: 'https://purdueka.org/'
 
   } ,
   {
     num: '02',
     title: 'Personal Portfolio Web Development',
-    description: "Develop a web application to display personal and career improvement.",
+    description: (
+      <>
+      Develop a web application to display personal and career improvement.
+      <br/>
+      I have primarily utilized NestJS, JavaScript, Tailwind CSS, and React.
+      </>
+    ),
     href: 'https://github.com/jungeun202/portfolio'
 
   } ,

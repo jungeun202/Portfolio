@@ -22,5 +22,10 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #005A9C;
   }
+  .text-highlight {
+    color: #005A9C;
+    font-weight: bold;
+  }
+  
 }
 
