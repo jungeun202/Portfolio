@@ -104,7 +104,8 @@ const Experience = () => {
             {/* experience category */}
             <h2 className="text-[42px] font-bold leading-none text-900 group-hover:text-accent transition-all duration-500 capitalize"> {experience.category}</h2>
             {/* experience description */}
-            <p className="text-900">{experience.description}</p>
+            {/* experience description */}
+            <div className="text-900">{experience.description}</div>
             {/* stack */}
             <ul className="flex gap-4">
               {experience.stack.map((item,index) => {
@@ -147,14 +148,16 @@ const Experience = () => {
                   {/* overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                   {/* image */}
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={experience.image}
-                        fill
-                        className="object-contain"
-                        alt=""
-                      />
-                    </div>
+                  <div className="relative w-full h-auto">
+                    <Image
+                      src={experience.image}
+                      layout="responsive" // This is different from 'fill'
+                      width={500} // Set a reasonable default width
+                      height={300} // Set a reasonable default height
+                      className="object-contain"
+                      alt=""
+                    />
+                  </div>
                   {/* overlay */}
                   </div>
                 </SwiperSlide>
