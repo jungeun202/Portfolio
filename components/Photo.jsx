@@ -32,7 +32,7 @@ const Photo = () => {
           />
         </motion.div>
         {/* Circle */}
-        {/* <motion.svg
+        <motion.svg
           className="absolute transform -translate-x-[10px] -translate-y-[5px]"
           width="500"  
           height="500" 
@@ -61,7 +61,7 @@ const Photo = () => {
               repeatType: "reverse",
             }}
           />
-        </motion.svg> */}
+        </motion.svg>
       </motion.div>
     </div>
   );
