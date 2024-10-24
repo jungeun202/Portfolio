@@ -33,7 +33,7 @@ const experiences = [
       </> 
     ),
     stack: [
-      {name: "Tableau"}, {name: "MySQL"}, {name: "Python"}
+      {name: "Tableau"}, {name: "MySQL"}, {name: "Python"}, {name: "Apache Spark"}
     ],
     image: "/assets/tableauDashboard.png",
     live:"https://public.tableau.com/views/dial_survey_new/Dashboard5?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
@@ -54,7 +54,7 @@ const experiences = [
       </>
     ),
     stack: [
-      {name: "PyTorch"}, {name: "Deep Learning"}
+      {name: "Python; PyTorch, Scikit-Learn, Numpy"}, {name: "Deep Learning"}
     ],
     image: "",
     live:"https://github.com/jungeun202/Transformer",
@@ -78,7 +78,7 @@ const experiences = [
       {name: "Python"}, {name: "React"}, {name: "API"}
     ],
     image: "/assets/surf_poster.png",
-    live:"",
+    live:"https://ag-dost.streamlit.app/",
   }
 ]
 const Experience = () => {
