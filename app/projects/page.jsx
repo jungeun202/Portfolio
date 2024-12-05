@@ -29,7 +29,18 @@ const projects = [
     href: 'https://github.com/jungeun202/portfolio'
 
   } ,
-  
+  {
+    num: '03',
+    title: 'Domain-Adaptive Learning for Visual Action Recognition with Temporal Modeling',
+    description: (
+      <>
+      Reimplemented the Recurrent Vision Transformer (RViT) architecture for a cross-modality task by tailoring the architecture for image training and video prediction, demonstrating its versatility in action label inference
+      <br/>
+      I have primarily utilized Pytorch, OpenCV, and Torchvision.
+      </>
+    ),
+    href: 'https://github.com/jungeun202/CS593'
+  }
 ]
 
 import { motion } from "framer-motion";
