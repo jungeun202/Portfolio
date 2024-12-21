@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import Image from "next/image";
 
 import { BsArrowUpRight } from "react-icons/bs";
 import {
@@ -58,16 +59,21 @@ const Experience = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex gap-6 items-start flex-col xl:justify-between">
-          <div className="text-8xl leading-none font-extrabold text-transparent text-outline"> {experience.num} </div>
-            <div className="flex flex-col gap-[30px] h-[50%]">
+          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-row gap-6 items-start">
+            {/* Number */}
+            <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              {experience.num}
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col gap-[30px]">
               <h1 className="text-6xl font-bold text-900">{experience.title}</h1>
               <h2 className="text-[42px] font-bold leading-none text-900 capitalize">
                 {experience.category}
               </h2>
               <div className="text-900">{experience.description}</div>
               <div className="text-xl font-semibold">Skills:</div>
-              <div className="text-l text-accent flex flex-wrap gap-4">
+              <div className="text-l text-accent flex flex-wrap gap-2">
                 {experience.skills.map((item, index) => (
                   <div key={index} className="flex items-center gap-2">
                     {item.icon}
@@ -80,30 +86,33 @@ const Experience = () => {
                 <p>{experience.location}</p>
               </div>
               <div className="flex items-center gap-2 mt-4">
-              <Link href={experience.live}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px h-[70px] rounded-full bh-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-whhite text-3xl group-hover:text-accent"/>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Live Project</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
+                <Link href={experience.live}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Live Project</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
               </div>
             </div>
           </div>
+
+          {/* Placeholder for Image */}
           <div className="w-full xl:w-[50%] flex items-center justify-center">
-            {/* <Image
+            {/* Uncomment and replace with actual image */}
+            <Image
               src={experience.image}
               layout="responsive"
               width={500}
               height={300}
               className="object-contain"
               alt={experience.title}
-            /> */}
+            />
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ const projects = [
       { icon: <SiPytorch />, name: "PyTorch" },
       { icon: <FaOpencart />, name: "OpenCV" },
     ],
-    image: '/path-to-domain-adaptive-learning.jpg',
+    image: '/proj3.png',
     timeline: 'Aug 2024 - Dec 2024',
   },
 ];
