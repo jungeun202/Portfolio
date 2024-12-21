@@ -1,3 +1,4 @@
+
 'use client';
 
 import { BsArrowDownRight } from "react-icons/bs";
@@ -74,12 +75,11 @@ const Projects = () => {
           }}
           className="grid grid-cols-1 xl:grid-cols-2 gap-[60px]"
         >
-          {/* Project Details */}
           <div className="flex flex-col gap-12">
             {projects.map((project, index) => (
               <div key={index} className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hove transition-all duration-500">
                     {project.num}
                   </div>
                   <h2 className="text-[28px] font-bold leading-none text-gray-700">
@@ -99,27 +99,20 @@ const Projects = () => {
                 </div>
                 <div className="text-sm text-gray-500">{project.timeline}</div>
                 <Link href={project.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
-                  <BsArrowDownRight className="text-primary text-2xl" />
-                </Link>
+                  <BsArrowDownRight className="tect-primary text-2xl"/>
+                </Link> 
               </div>
             ))}
           </div>
-
-          {/* Project Images */}
-          <div className="flex flex-col items-center gap-12">
+          <div className="flex justify-center flex-col items-center gap-8">
             {projects.map((project, index) => (
-              <div
-                key={index}
-                className="flex justify-center items-center w-full"
-                style={{ minHeight: "200px" }} // Ensures a consistent height area
-              >
                 <img
+                  key={index}
                   src={project.image}
                   alt={project.title}
-                  className="max-w-[80%] max-h-[300px] rounded-lg shadow-lg object-contain"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
-              </div>
-            ))}
+              ))}
           </div>
         </motion.div>
       </div>
