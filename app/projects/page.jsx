@@ -103,15 +103,15 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-12">
             {projects.map((project, index) => (
-              <img
-                key={index}
-                src={project.image}
-                alt={project.title}
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            ))}
+                <img
+                  key={index}
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              ))}
           </div>
         </motion.div>
       </div>

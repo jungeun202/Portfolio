@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* Form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#faf6f0] rounded-xl" onSubmit={handleSubmit}>
+            <form className="flex flex-col gap-6 p-10 bg-gray-100 rounded-lg shadow-lg rounded-xl" onSubmit={handleSubmit}>
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-900">Excited to hear from you!</p>
               {/* Input Fields */}
@@ -126,7 +126,7 @@ const Contact = () => {
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li key={index} className="flex items-center gap-6">
-                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#faf6f0] text-accent rounded-md flex items-center justify-center">
+                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-gray-100 rounded-lg shadow-lg text-accent rounded-md flex items-center justify-center">
                     <div className="text-[28px]">{item.icon}</div>
                   </div>
                   <div className="flex-1">

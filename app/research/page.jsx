@@ -38,12 +38,12 @@ const Research = () => {
         {/* Description and Image Section */}
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8 mb-12">
           <div className="text-center xl:text-left max-w-[600px]">
-            <p className="mb-6 text-gray-700">
+            <p className="mb-6 ">
               My research interests lie at the intersection of natural language
               processing and human-centric AI design, with a focus on mitigating
               biases and enhancing interpretability.
             </p>
-            <p className="text-gray-700">
+            <p>
               I am also interested in addressing long-tail behavior in AI
               systems, ensuring robust performance across diverse and
               low-frequency scenarios.
@@ -51,7 +51,7 @@ const Research = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="/AI.PNG"
+              src="/assets/AI_image.png"
               alt="AI"
               className="w-full max-w-[500px] h-auto rounded-3xl shadow-lg"
             />
@@ -90,12 +90,9 @@ const Research = () => {
                 <p className="text-lg text-gray-700 mb-6">{item.description}</p>
                 <p className="text-md text-gray-500 mb-3">{item.timeline}</p>
                 <p className="text-md text-gray-500 mb-6">{item.location}</p>
-                <Link
-                  href={item.link}
-                  className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-                >
-                  <BsArrowDownRight className="text-primary text-2xl" />
-                </Link>
+                <Link href={item.link} className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                  <BsArrowDownRight className="tect-primary text-2xl"/>
+                </Link> 
               </div>
 
 
