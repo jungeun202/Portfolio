@@ -53,7 +53,7 @@ const Research = () => {
             <img
               src="/assets/AI_image.png"
               alt="AI"
-              className="w-full max-w-[500px] h-auto rounded-3xl shadow-lg"
+              className="w-full max-w-[500px] h-auto rounded-2xl shadow-lg"
             />
           </div>
         </div>
