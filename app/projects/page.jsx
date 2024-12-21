@@ -23,7 +23,7 @@ const projects = [
       { icon: <FaReact />, name: "React" },
       { icon: <SiTypescript />, name: "TypeScript" },
     ],
-    image: '/Purdue_KSA.png',
+    image: '/Purdue_KSA.PNG',
     timeline: 'Jan 2024 - Aug 2024',
   },
   {
