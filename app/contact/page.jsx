@@ -66,7 +66,7 @@ const Contact = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px]">
+        <div className="flex flex-col xl:flex-row gap-[70px]">
           {/* Form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-gray-100 rounded-lg shadow-lg rounded-xl" onSubmit={handleSubmit}>
