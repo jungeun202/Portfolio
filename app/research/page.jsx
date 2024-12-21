@@ -23,7 +23,7 @@ const Research = () => {
         "Conducted experiments with transformer models, analyzing attention mechanisms to enhance linear time and memory efficiency.",
       timeline: "May 2024 - Aug 2024",
       location: "Seoul, South Korea",
-      image: "/assets/transformer.png",
+      image: "/download.png",
     },
   ];
 
@@ -38,7 +38,7 @@ const Research = () => {
         {/* Description and Image Section */}
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8 mb-12">
           <div className="text-center xl:text-left max-w-[600px]">
-            <p className="mb-6 ">
+            <p className="mb-6">
               My research interests lie at the intersection of natural language
               processing and human-centric AI design, with a focus on mitigating
               biases and enhancing interpretability.
@@ -64,9 +64,7 @@ const Research = () => {
           {timelineItems.map((item, index) => (
             <div
               key={index}
-              className={`relative flex flex-col md:flex-row items-center md:items-stretch w-full max-w-6xl mb-14 ${
-                index % 2 === 0 ? "self-start" : "self-end"
-              }`}
+              className="relative flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mb-14 gap-8"
             >
               {/* Text Section */}
               <div
@@ -92,9 +90,8 @@ const Research = () => {
                 <p className="text-md text-gray-500 mb-6">{item.location}</p>
                 <Link href={item.link} className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
                   <BsArrowDownRight className="tect-primary text-2xl"/>
-                </Link> 
+                </Link>
               </div>
-
 
               {/* Image Section */}
               {item.image && (
@@ -102,7 +99,7 @@ const Research = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full max-w-lg h-auto rounded-lg shadow-lg"
+                    className="w-full max-w-lg h-auto md:h-[300px] object-cover rounded-lg shadow-lg"
                   />
                 </div>
               )}
