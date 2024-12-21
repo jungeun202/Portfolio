@@ -21,7 +21,7 @@ const Research = () => {
             <img
               src="/AI.PNG"
               alt="AI"
-              className="w-full max-w-[700px] h-auto rounded-lg shadow-lg"
+              className="w-full max-w-[900px] h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
