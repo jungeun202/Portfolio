@@ -9,7 +9,7 @@ const Photo = () => {
         initial={{ opacity: 0 }} 
         animate={{
           opacity: 1,
-          transition: { delay: 1, duration: 0.2, ease: easeIn },
+          transition: { delay: 0.5, duration: 0.2, ease: easeIn },
         }}
         className="relative flex items-center justify-center"
       >
@@ -17,7 +17,7 @@ const Photo = () => {
           initial={{ opacity: 0 }} 
           animate={{
             opacity: 1,
-            transition: { delay: 0.7, duration: 0.2, ease: easeInOut },
+            transition: { delay: 0.5, duration: 0.2, ease: easeInOut },
           }}
           className="w-[460px] h-[460px] xl:w-[460px] xl:h-[460px] relative "
         >

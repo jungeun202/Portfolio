@@ -103,8 +103,9 @@ const Projects = () => {
                 </Link> 
               </div>
             ))}
+            
           </div>
-          <div className="flex justify-center flex-col items-center gap-12">
+          <div className="flex flex-col items-center gap-12">
             {projects.map((project, index) => (
                 <img
                   key={index}
