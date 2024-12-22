@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
+import { FaFileAlt } from "react-icons/fa"
 
 const Research = () => {
   const timelineItems = [
@@ -38,16 +39,28 @@ const Research = () => {
         {/* Description and Image Section */}
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8 mb-12">
           <div className="text-center xl:text-left max-w-[600px]">
+            <p  className="mb-6">
+            I am actively seeking a PhD position starting in Fall 2025! 
+            </p>
             <p className="mb-6">
               My research interests lie at the intersection of natural language
               processing and human-centric AI design, with a focus on mitigating
               biases and enhancing interpretability.
             </p>
-            <p>
+            <p className="mb-6">
               I am also interested in addressing long-tail behavior in AI
               systems, ensuring robust performance across diverse and
               low-frequency scenarios.
             </p>
+            <a
+            href="/assets/Research Statement.pdf" // Replace with the actual path to your file
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-highlight transition"
+          >
+            <FaFileAlt className="text-2xl" /> {/* Using react-icons */}
+            <span>Research Statement</span>
+          </a>
           </div>
           <div className="flex justify-center">
             <img
