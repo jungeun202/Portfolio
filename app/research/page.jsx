@@ -10,7 +10,7 @@ const Research = () => {
       link: "https://ag-dost.streamlit.app/",
       link2: "https://dad.saraswat.rcac.purdue.edu/?_ga=2.180665639.1654399781.1734484538-1126171868.1731528420",
       description:
-        "Engineered a customized NLP chatbot for a control system that provides farmers with precise and effective treatment instructions.",
+        "Engineered a customized NLP chatbot for a control system that provides farmers with precise and effective treatment instructions.<br />Honored to receieve SURF 2023 Best Poster Presentation Award.",
       timeline: "May 2023 - Present",
       location: "West Lafayette, IN",
       image: "/assets/surf_poster.png",
@@ -98,7 +98,10 @@ const Research = () => {
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
                   {item.title}
                 </h3>
-                <p className="text-lg text-gray-700 mb-6">{item.description}</p>
+                <p
+                  className="text-lg text-gray-700 mb-4"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                ></p>
                 <p className="text-md text-gray-500 mb-3">{item.timeline}</p>
                 <p className="text-md text-gray-500 mb-6">{item.location}</p>
                 <Link href={item.link} className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
