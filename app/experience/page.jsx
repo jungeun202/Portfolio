@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { SiMysql, SiNestjs, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-
+import { FaTable } from "react-icons/fa";
+import { FaFire } from "react-icons/fa";
 const experiences = [
   {
     num: "01",
@@ -21,10 +22,8 @@ const experiences = [
     ),
     skills: [
       { icon: <SiMysql />, name: "MySQL" },
-      { icon: <SiNestjs />, name: "NestJS" },
-      { icon: <SiNextdotjs />, name: "Next.js" },
-      { icon: <FaReact />, name: "React" },
-      { icon: <SiTypescript />, name: "TypeScript" },
+      { icon: <FaTable />, name: "Tableau" },
+      { icon: <FaFire />, name: "Apache Spark" }
     ],
     timeline: "August 2023 - Present",
     location: "West Lafayette, IN",
