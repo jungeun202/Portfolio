@@ -61,6 +61,22 @@ const projects = [
     image: '/proj3.png',
     timeline: 'Aug 2024 - Dec 2024',
   },
+  {
+    num: '04',
+    title: 'Kaggle Competitions - LLM Classification Finetuning',
+    description: (
+      <>
+        Predict user preferences in head-to-head battles between LLM-powered chatbots.
+      </>
+    ),
+    href: 'https://github.com/jungeun202/kaggle',
+    skills: [
+      { icon: <SiPytorch />, name: "PyTorch" },
+      { icon: <FaOpencart />, name: "OpenCV" },
+    ],
+    image: '',
+    timeline: 'Dec 2024 - Present',
+  },
 ];
 
 const Projects = () => {
