@@ -52,15 +52,23 @@ const Research = () => {
               systems, ensuring robust performance across diverse and
               low-frequency scenarios.
             </p>
-            <a
-            href="/assets/Research Statement.pdf" // Replace with the actual path to your file
+            <a 
+            href="/assets/Research Statement.pdf" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-highlight transition"
-          >
-            <FaFileAlt className="text-2xl" /> {/* Using react-icons */}
+            className="flex items-center mb-6 gap-2 text-highlight transition"
+            >
+            <FaFileAlt className="text-2xl" /> 
             <span>Research Statement</span>
-          </a>
+            </a>
+            <p className="mb-6">
+              Topics of interest include 
+              <span className="text-highlight text-"> fairness in AI</span>, 
+              <span className="text-highlight"> decision-making agents</span>, and 
+              <span className="text-highlight"> retrieval-augmented language models</span>.
+            </p>
+
+          
           </div>
           <div className="flex justify-center">
             <img
