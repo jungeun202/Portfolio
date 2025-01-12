@@ -136,12 +136,9 @@ const Projects = () => {
                 ))}
               </div>
               <div className="text-sm text-gray-500">{project.timeline}</div>
-              <Link
-                href={project.href}
-                className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-              >
-                <BsArrowDownRight className="text-primary text-2xl" />
-              </Link>
+              <Link href={project.href} className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                  <BsArrowDownRight className="tect-primary text-2xl"/>
+                </Link>
             </div>
 
             {/* Media Section */}
