@@ -18,7 +18,7 @@ const Home = () => {
                 {/* <br/>I am anticipated to pursue a master's program in the fall of 2025. */}
             </p>
             <div className='flex flex-col xl:flex-row items-center gap-8'>
-              <Link href="/assets/jungeun_hwang_cv.pdf" download>
+              <Link href="Jungeun_Hwang_Resume.pdf" download>
                 <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className='text-xl' />

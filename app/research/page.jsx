@@ -24,7 +24,7 @@ const Research = () => {
         "Conducted experiments with transformer models, analyzing attention mechanisms to enhance linear time and memory efficiency.",
       timeline: "May 2024 - Aug 2024",
       location: "Seoul, South Korea",
-      image: "/download.png",
+      image: "",
     },
   ];
 
@@ -39,9 +39,9 @@ const Research = () => {
         {/* Description and Image Section */}
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8 mb-12">
           <div className="text-center xl:text-left max-w-[600px]">
-            <p  className="mb-6">
+            {/* <p  className="mb-6">
             I am actively seeking a PhD position starting in Fall 2025! 
-            </p>
+            </p> */}
             <p className="mb-6">
               My research interests lie at the intersection of natural language
               processing and human-centric AI design, with a focus on mitigating

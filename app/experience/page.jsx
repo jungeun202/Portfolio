@@ -28,11 +28,28 @@ const experiences = [
     timeline: "August 2023 - Present",
     location: "West Lafayette, IN",
   },
+  {
+    num: "02",
+    category: "FullStack Engineer Intern",
+    title: "Stealth AI Startup",
+    description: (
+      <>
+        soon
+      </>
+    ),
+    skills: [
+      // { icon: <SiMysql />, name: "MySQL" },
+      // { icon: <FaTable />, name: "Tableau" },
+      // { icon: <FaFire />, name: "Apache Spark" }
+    ],
+    timeline: "January 2025 - Present",
+    location: "Remote",
+  },
 ];
 
 const Experience = () => {
-  const [experience] = useState(experiences[0]);
-
+  const [selectedExperience, setSelectedExperience] = useState(0);
+  const experience = experiences[selectedExperience];
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
@@ -59,11 +76,31 @@ const Experience = () => {
           className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center"
           style={{ alignItems: "center" }}
         >
-          {/* Left Column */}
-          <div className="flex flex-col gap-6">
+         {/* Left Column */}
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-4">
             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
               {experience.num}
             </div>
+
+            {/* Navigation Buttons */}
+            <div className="flex gap-2 mt-8">
+              <button
+                onClick={() => setSelectedExperience((prev) => (prev === 0 ? experiences.length - 1 : prev - 1))}
+                className="p-2 bg-gray-300 rounded-full hover:bg-gray-400 transition"
+              >
+                ◀
+              </button>
+
+              <button
+                onClick={() => setSelectedExperience((prev) => (prev === experiences.length - 1 ? 0 : prev + 1))}
+                className="p-2 bg-gray-300 rounded-full hover:bg-gray-400 transition"
+              >
+                ▶
+              </button>
+            </div>
+          </div>
+
             <h1 className="text-6xl font-bold text-800">{experience.title}</h1>
             <h2 className="text-[42px] font-bold leading-none text-700 capitalize">
               {experience.category}
@@ -92,6 +129,7 @@ const Experience = () => {
         </div>
 
         {/* Tableau Embed Section */}
+        {experience.num === "01" && (
         <div className="mt-12 flex justify-center">
           <div
             className="tableauPlaceholder"
@@ -133,7 +171,8 @@ const Experience = () => {
             ></iframe>
           </div>
         </div>
-      </div>
+        )}
+        </div>
     </motion.section>
   );
 };
