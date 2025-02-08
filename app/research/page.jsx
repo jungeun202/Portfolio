@@ -24,7 +24,7 @@ const Research = () => {
         "Conducted experiments with transformer models, analyzing attention mechanisms to enhance linear time and memory efficiency.",
       timeline: "May 2024 - Aug 2024",
       location: "Seoul, South Korea",
-      image: "",
+      image: "/assets/",
     },
   ];
 

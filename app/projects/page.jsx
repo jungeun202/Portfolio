@@ -22,7 +22,7 @@ const projects = [
       { icon: <FaReact />, name: "React" },
       { icon: <SiTypescript />, name: "TypeScript" },
     ],
-    video: '/demo.mov',
+    video: '/assets//demo.mov',
     timeline: 'Jan 2025 - Present',
   },
   {
@@ -38,7 +38,7 @@ const projects = [
       { icon: <SiPytorch />, name: "PyTorch" },
       { icon: <FaOpencart />, name: "OpenCV" },
     ],
-    image: '/proj3.png',
+    image: '/assets/proj3.png',
     timeline: 'Aug 2024 - Dec 2024',
   },
   {
@@ -57,7 +57,7 @@ const projects = [
       { icon: <FaReact />, name: "React" },
       { icon: <SiTypescript />, name: "TypeScript" },
     ],
-    image: '/Purdue_KSA.PNG',
+    image: '/assets/Purdue_KSA.PNG',
     timeline: 'Jan 2024 - Aug 2024',
   },
   {
@@ -75,7 +75,7 @@ const projects = [
       { icon: <SiTailwindcss />, name: "Tailwind CSS" },
       { icon: <FaReact />, name: "React" },
     ],
-    image: '/homepage.png',
+    image: '/assets/homepage.png',
     timeline: 'May 2024 - Present',
   },
   {
